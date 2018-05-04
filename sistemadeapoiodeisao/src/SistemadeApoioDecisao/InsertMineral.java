@@ -1,12 +1,11 @@
 package SistemadeApoioDecisao;
 /**
- *
- * @author rodrigo
+ * @author Rodrigo dos Santos Felix
  */
+
 public class InsertMineral {
     private float ferro;
     private float magnesio;
-    private float oxigenio;
     private float nitrogenio;
     private float enxofre;
     private float pentoxidodefosforo;
@@ -27,7 +26,7 @@ public class InsertMineral {
         return fosforo;
     }
     
-    public void setFosoforo(float fosforo){
+    public void setFosforo(float fosforo){
         this.fosforo = fosforo;
     }
     
@@ -159,12 +158,9 @@ public class InsertMineral {
         this.magnesio = magnesio;
     }
     
-    public float getOxigenio(){
-        return oxigenio;
+
+    @Override
+    public String toString() {
+        return "InsertMineral{" + "ferro=" + ferro + ", magnesio=" + magnesio + ", nitrogenio=" + nitrogenio + ", enxofre=" + enxofre + ", pentoxidodefosforo=" + pentoxidodefosforo + ", k2o=" + k2o + ", calcio=" + calcio + ", boro=" + boro + ", cloro=" + cloro + ", molibdenio=" + molibdenio + ", cobre=" + cobre + ", manganes=" + manganes + ", zinco=" + zinco + ", cobalto=" + cobalto + ", aluminio=" + aluminio + ", potassio=" + potassio + ", fosforo=" + fosforo + '}';
     }
-    
-    public void setOxigenio(float oxigenio){
-        this.oxigenio = oxigenio;
-    }
-    
 }
